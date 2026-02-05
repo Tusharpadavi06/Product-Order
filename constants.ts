@@ -3,7 +3,25 @@ export const BRANCHES = [
   'Ahmedabad', 'Banglore', 'Delhi', 'Jaipur', 'Kolkata', 'Ludhiana', 'Mumbai', 'Surat', 'Tirupur', 'Ulhasnagar'
 ].sort();
 
-// Mapping branches to their respective head emails for approvals as provided
+export const CATEGORIES = [
+  "CKU", "WARP", "EMB", "HOOK & EYE", "ELASTIC", "TLU", "CROCHET", "VAU", "PRINTING", "CUP"
+].sort();
+
+export const UOMS = ["Kg", "Mtr", "Pkt", "Yard", "Pcs", "Roll", "Inch"];
+
+export const SALESMEN = [
+  { name: "Amit Korgaonkar", contact: "9833181414" },
+  { name: "Santosh Pachratkar", contact: "9320167523" },
+  { name: "Rakesh Jain", contact: "9370672000" },
+  { name: "Kamlesh Sutar", contact: "9004095847" },
+  { name: "Pradeep Jadhav", contact: "8976230355" },
+  { name: "Nikam", contact: "9867472660" },
+  { name: "Ginza_Mumbai-HO", contact: "8805796399" }
+];
+
+export const GRADES = ["Grade I", "Grade II", "Grade III"];
+
+// Mapping branches for background logic
 export const BRANCH_CONFIG: Record<string, { headEmail: string, headName: string }> = {
   Ahmedabad: { headEmail: 'ahmedabad@ginzalimited.com', headName: 'Ravindra kaushik' },
   Banglore: { headEmail: 'murali.krishna@ginzalimited.com', headName: 'Murali Krishna' },
@@ -16,32 +34,3 @@ export const BRANCH_CONFIG: Record<string, { headEmail: string, headName: string
   Tirupur: { headEmail: 'tirupur@ginzalimited.com', headName: 'Ravi Varman' },
   Ulhasnagar: { headEmail: 'sachin.bhosle@ginzalimited.com', headName: 'Sachin Bhosale' }
 };
-
-export const BRANCH_SALES_PERSONS: Record<string, string[]> = {
-  Mumbai: ['Amit Korgaonkar', 'Santosh Pachratkar', 'Rakesh Jain', 'Kamlesh Sutar', 'Pradeep Jadhav', 'Mumbai HO'],
-  Ulhasnagar: ['Shiv Ratan', 'Viay Sutar', 'Ulasnagar HO'],
-  Kolkata: ['Rajesh Jain', 'Kolkata HO'],
-  Jaipur: ['Durgesh Bhati', 'Jaipur HO'],
-  Delhi: ['Lalit Maroo', 'Anish Jain', 'Suresh Nautiyal', 'Rahul Vashishtha', 'Mohit Sharma', 'Delhi HO'],
-  Banglore: ['Balasubramanyam', 'Tarachand', 'Bangalore HO'],
-  Tirupur: ['Alexander Pushkin', 'Subramanian', 'Mani Maran', 'Tirupur HO'],
-  Ahmedabad: ['ravindra kaushik', 'Ahmedabad HO'],
-  Surat: ['Anil Marthe', 'Raghuveer Darbar', 'Sailesh Pathak', 'Vanraj Darbar', 'Surat HO'],
-  Ludhiana: ['Ludhiana HO']
-};
-
-export const CATEGORIES = [
-  'CKU', 
-  'CRO', 
-  'CUP', 
-  'DELHI',
-  'ELASTIC', 
-  'EMBROIDARY', 
-  'EYE_N_HOOK', 
-  'PRINTING', 
-  'TLU', 
-  'VAU', 
-  'WARP(UDHANA)'
-].sort();
-
-export const UOMS = ['INCH', 'KG', 'MTR', 'PCS', 'PKT', 'ROLL', 'YARD'];
